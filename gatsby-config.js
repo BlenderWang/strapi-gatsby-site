@@ -19,7 +19,7 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.DEPLOY_URL
-          ? "https://flaxinnovations-strapi-cms.herokuapp.com"
+          ? "https://strapi-gatsby-postgresql-temp.herokuapp.com"
           : "http://localhost:1337",
         contentTypes: ["news", "jobs", "user"],
         queryLimit: 1000,
