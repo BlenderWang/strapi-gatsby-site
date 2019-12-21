@@ -1,0 +1,31 @@
+.join {
+  position: relative;
+  top: 12.5rem;
+  width: 100%;
+  background: #fff;
+  padding: 1.6em 2.8em;
+  text-align: center;
+  display: grid;
+
+  .divi-line {
+    margin: 1.8em 0 2em;
+    height: 2px;
+    background: $gray-500;
+  }
+
+  .divi--left,
+  .divi--right {
+    width: 60%;
+  }
+
+  .divi--right {
+    position: relative;
+    left: 40%;
+  }
+
+  .link {
+    width: 30%;
+    display: grid;
+    justify-self: center;
+  }
+}

@@ -1,0 +1,50 @@
+.contact {
+  position: relative;
+  top: 12.5rem;
+  width: 100%;
+  padding: 2em 2.8em;
+  text-align: center;
+  background: white;
+
+  h1 {
+    text-transform: capitalize;
+  }
+
+  h1 + p {
+    font-weight: 700;
+  }
+
+  p {
+    margin: 1em auto;
+  }
+
+  #{&}--icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.6em;
+    margin-top: 2.8em;
+
+    p,
+    i {
+      color: $primary-color;
+      cursor: pointer;
+      @include transition-ease;
+
+      &:hover {
+        color: darken($primary-color, 10%);
+      }
+    }
+
+    i {
+      font-size: 1.8em;
+
+      &:hover {
+        font-size: 1.85em;
+      }
+    }
+
+    p {
+      font-size: 1.4em;
+    }
+  }
+}

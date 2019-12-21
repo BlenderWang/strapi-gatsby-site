@@ -1,0 +1,55 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 0 auto; 
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-weight: 700;
+  }
+}
+
+form {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 0 0 1.8em;
+
+  input,
+  textarea {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 13px 13px 13px 15px;
+    width: 100%;
+
+    &:focus {
+      color: $gray-800;
+      outline: $primary-color auto 2px;
+    }
+  }
+
+  textarea {
+    line-height: 150%;
+    resize: vertical;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    
+    .btn--danger {
+      width: initial;
+      font-size: 1em;
+      @include transition-ease;
+      
+      &:hover {
+        background: indianred;
+        color: $gray-100;
+      }
+    }
+  }
+}

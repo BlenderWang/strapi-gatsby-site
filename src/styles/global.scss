@@ -1,0 +1,180 @@
+// fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Roboto+Condensed&display=swap");
+
+// variables
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #1e1e1e;
+$primary-color: #3098a6;
+
+// transition mixin
+@mixin transition-ease {
+  transition: all 0.4s ease-in-out;
+}
+
+// font color mixin
+@function set-color($color) {
+  @if (lightness($color) > 30%) {
+    @return #212529;
+  } @else {
+    @return #f8f9fa;
+  }
+}
+
+// media queries mixins
+
+@mixin media-sm {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+// global settings
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: transparent;
+  font-size: 12px;
+  color: $black;
+  font-family: "Open Sans Condensed", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+a {
+  color: set-color(white);
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 145%;
+
+  &:hover,
+  &:active {
+    outline-width: 0;
+    color: $primary-color;
+    @include transition-ease;
+  }
+}
+
+.btn {
+  margin: 1em;
+  padding: 1.5em;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn--dark {
+  background: $gray-900;
+  color: $gray-100;
+  border: 1px solid $gray-900;
+  @include transition-ease;
+
+  &:hover {
+    background: $gray-100;
+    color: $gray-900;
+    border: 1px solid $gray-900;
+  }
+}
+
+.link-btn {
+  margin: 1em;
+  padding: 1.15em;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.45em;
+  text-transform: uppercase;
+  background: $gray-900;
+  color: $gray-100;
+  border: 1px solid $gray-900;
+  @include transition-ease;
+
+  &:hover {
+    background: $gray-100;
+    color: $gray-900;
+    border: 1px solid $gray-900;
+  }
+}
+
+.nav-bar-fix-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+  z-index: 10;
+  width: 100%;
+  background-color: transparent;
+  @include transition-ease;
+
+  h1 {
+    line-height: 0.9;
+    font-size: 1em;
+
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.nav-bar-fix-top--bg-clr {
+  background-color: white;
+  height: 6rem;
+}
+
+.hide {
+  display: none;
+  @include transition-ease;
+}

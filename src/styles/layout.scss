@@ -1,0 +1,28 @@
+@import "../styles/global.scss";
+@import "../styles/responsive.scss";
+@import "../styles/header.scss";
+@import "../styles/about.scss";
+@import "../styles/slideshow.scss";
+@import "../styles/singleNews.scss";
+@import "../styles/menu.scss";
+@import "../styles/hamburger.scss";
+@import "../styles/join.scss";
+@import "../styles/jobs.scss";
+@import "../styles/contact.scss";
+@import "../styles/form.scss";
+@import "../styles/intro.scss";
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}

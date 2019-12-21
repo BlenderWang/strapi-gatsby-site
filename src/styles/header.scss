@@ -1,0 +1,40 @@
+@import './global.scss';
+
+.header {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &__title {
+    position: fixed;
+    margin-top: 3.75rem;
+    width: 100vw;
+    font-weight: 300;
+    font-size: 0.65em;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    z-index: -50;
+
+    h4 {
+      font-size: 0.6rem;
+      font-weight: 200;
+      text-align: center;
+      width: 90%;
+      margin: 0.55em auto 0.35em;
+    }
+  }
+
+  #background-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    min-height: auto;
+    filter: grayscale(1) opacity(0.5);
+    overflow: hidden;
+    z-index: -100;
+  }
+}

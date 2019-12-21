@@ -1,0 +1,69 @@
+@import "global.scss";
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1001;
+  opacity: 0.98;
+  visibility: hidden;
+
+  &.open {
+    visibility: visible;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    list-style: none;
+    padding-right: 1rem;
+    background: $gray-900;
+    transform: translate(0, -100%);
+    @include transition-ease;
+
+    &.open {
+      transform: translateY(0);
+    }
+
+    &__item {
+      color: $gray-900;
+      transform: translateX(100%);
+      @include transition-ease;
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      &.active > a {
+        color: $primary-color;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      font-size: 1.95rem;
+      text-transform: uppercase;
+      padding: 1.2rem 1rem;
+      font-weight: 300;
+      color: set-color($gray-900);
+      @include transition-ease;
+
+      &:hover {
+        transform-origin: left top;
+        transform: scale(1, 1);
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 5 {
+  .menu-list__item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1) + 0.15s;
+  }
+}

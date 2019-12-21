@@ -1,0 +1,52 @@
+.about {
+  position: relative;
+  top: 12.5rem;
+  width: 100%;
+  padding: 2em 2.8em;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 1.5em;
+    text-transform: capitalize;
+  }
+
+  p {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .divi-line {
+    margin: 2.5em auto auto;
+    width: 90%;
+    height: 2px;
+    border: 2px dotted $gray-500;
+  }
+
+  .value {
+    margin-bottom: 2em;
+    cursor: pointer;
+
+    i {
+      font-size: 1.8em;
+      color: $primary-color;
+      text-align: center;
+      line-height: 3.5;
+      width: 5rem;
+      height: 5rem;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      @include transition-ease;
+
+      &:hover {
+        font-size: 2.2em;
+        line-height: 2.8;
+        border: 1px solid darken($primary-color, 10%);
+        color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
