@@ -13,13 +13,10 @@ export default class Header extends Component {
       <div className="header" id="home">
         <div className="header__title">
           <Title
-            subtitle={"READY TO CHANGE THE INDUSTRY? WELCOME ON BOARD!!!"}
+            subtitle={"Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm."}
           />
           <h4>
-            We believe in challenging ourselves to rethink and accelerate the
-            digitalisation of the betting industry. Data intelligence,
-            automatisation and mobile technology is in our DNA. Lets unleash the
-            potential, together.
+          Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.
           </h4>
         </div>
         <video id="background-video" loop autoPlay muted>
