@@ -7,7 +7,7 @@ export default class Header extends Component {
     videoURL:
       "https://res.cloudinary.com/shirlzzz9/video/upload/v1575575712/SnowFall_online-video-cutter.com.mp4",
   }
-
+  
   render() {
     return (
       <div className="header" id="home">
