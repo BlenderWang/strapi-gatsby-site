@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Flax Innovations`,
-    description: `Flax Innovations mission is to be the hub for disruptive product development catering to the interactive betting industry. We are developing innovative products that allow betting operators to stay ahead of the game.`,
+    title: `Wangimation`,
+    description: `This is a template I developed using Gatsby on the front combined with Strapi CMS.`,
     url: `https://strapi-gatsby-postgresql-temp.netlify.com/`,
     image: `src/images/favicon.png`,
     author: `@gatsbyjs @strapi @shirleywang`,
