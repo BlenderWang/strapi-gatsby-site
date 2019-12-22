@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Flax Innovations`,
     description: `Flax Innovations mission is to be the hub for disruptive product development catering to the interactive betting industry. We are developing innovative products that allow betting operators to stay ahead of the game.`,
-    url: `https://flax-innovations.netlify.com/`,
+    url: `https://strapi-gatsby-postgresql-temp.netlify.com/`,
     image: `src/images/favicon.png`,
     author: `@gatsbyjs @strapi @shirleywang`,
   },
@@ -19,7 +19,7 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.DEPLOY_URL
-          ? "https://flaxinnovations-strapi-cms.herokuapp.com"
+          ? "https://https://strapi-gatsby-postgresql-temp.herokuapp.com"
           : "http://localhost:1337",
         contentTypes: ["news", "jobs", "user"],
         queryLimit: 1000,
