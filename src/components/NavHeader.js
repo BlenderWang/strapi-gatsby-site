@@ -44,7 +44,7 @@ export default class NavHeader extends Component {
     return (
       <div className={navTrans}>
         <Link to="/">
-          <Title title={"Flax"} subtitle={"Innovations"} />
+          <Title title={"W"} subtitle={"In Action"} />
         </Link>
         <Menu />
       </div>

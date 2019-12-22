@@ -5,14 +5,16 @@ import "../styles/header.scss"
 export default class Header extends Component {
   state = {
     videoURL:
-      "https://res.cloudinary.com/dqycgwhnr/video/upload/v1575369432/190312_28_StadioOlimpicoAndFans_Drone_004_online-video-cutter.com_my4ews.mp4",
-      // "https://res.cloudinary.com/dqycgwhnr/video/upload/v1575368613/4k-slow-motion-3d-animation-of-soccer-ball-flying-and-tearing-goal-net-on-dark-background-with-stadium-lights_4du-amlfl__WL_x3lelw.mp4"
+      "https://res.cloudinary.com/shirlzzz9/video/upload/v1575575712/SnowFall_online-video-cutter.com.mp4",
   }
+
   render() {
     return (
       <div className="header" id="home">
         <div className="header__title">
-          <Title subtitle={"READY TO CHANGE THE INDUSTRY? WELCOME ON BOARD!!!"} />
+          <Title
+            subtitle={"READY TO CHANGE THE INDUSTRY? WELCOME ON BOARD!!!"}
+          />
           <h4>
             We believe in challenging ourselves to rethink and accelerate the
             digitalisation of the betting industry. Data intelligence,
