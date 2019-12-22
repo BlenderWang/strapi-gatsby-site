@@ -18,9 +18,6 @@ export default class Contact extends Component {
                 {({ opacity }) => (
                   <div style={{ opacity }}>
                     <Paragraph paragraph={`Curious? Let's talk!`} />
-                    <Paragraph
-                      paragraph={`Send us an email or call. We will be happy to tell you more!`}
-                    />
                   </div>
                 )}
               </Spring>
@@ -36,9 +33,9 @@ export default class Contact extends Component {
         </Helmet>
         <div className="contact--icons">
           <i className="fas fa-at"></i>
-          <Paragraph paragraph={"info@flaxinnovations.com"} />
+          <Paragraph paragraph={"shirleywang527@gmail.com"} />
           <i className="fas fa-phone-alt"></i>
-          <Paragraph paragraph={"+46 707 160 390"} />
+          <Paragraph paragraph={"+46 765 838 373"} />
         </div>
         <Form />
       </div>

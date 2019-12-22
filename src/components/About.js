@@ -10,31 +10,30 @@ export default class About extends Component {
     values: [
       {
         id: 0,
-        icon: "fa-signal",
-        name: "Volume",
+        icon: "fa-ice-cream",
+        name: "Color",
         description:
-          "Our products and services focus on driving betting turnover through innovation.",
+          "Brownie topping liquorice. I love chocolate bar cookie jelly-o donut halvah. Chupa chups chocolate bar carrot cake bear claw carrot cake donut.",
       },
       {
         id: 1,
-        icon: "fa-cogs",
-        name: "Automatisation",
-        description:
-          "We use artificial intelligence and big data to automate for staying efficient.",
+        icon: "fa-heart",
+        name: "Smell",
+        description: "Donut wafer cheesecake icing wafer halvah.",
       },
       {
         id: 2,
-        icon: "fa-search",
-        name: "Transparency",
+        icon: "fa-cookie-bite",
+        name: "Flavor",
         description:
-          "We provide transparancy to operators and players in everything we do.",
+          "I love carrot cake I love icing bonbon. Cotton candy jelly-o wafer biscuit chupa chups toffee fruitcake I love dragée. ",
       },
       {
         id: 3,
-        icon: "fa-heart",
-        name: "Personalisation",
+        icon: "fa-birthday-cake",
+        name: "Size",
         description:
-          "Predictive personalisation enables us to offer a better user experience.",
+          "Jelly tart lemon drops dragée brownie candy sesame snaps cake. Brownie sweet marzipan bear claw.",
       },
     ],
   }
@@ -49,7 +48,7 @@ export default class About extends Component {
                 <div style={{ opacity }}>
                   <Paragraph
                     paragraph={
-                      "Flax Innovations mission is to be the hub for disruptive product development catering to the interactive betting industry. We are developing innovative products that allow betting operators to stay ahead of the game."
+                      "Bonbon sesame snaps candy icing gummies. Gingerbread chupa chups gingerbread candy canes. Marzipan I love muffin lemon drops gummies macaroon wafer tart."
                     }
                   />
                 </div>
@@ -66,7 +65,7 @@ export default class About extends Component {
             </Spring>
           )}
         </VisibilitySensor>
-        <Title subtitle={"our values"} />
+        <Title subtitle={"values"} />
         <Values values={this.state.values} />
       </div>
     )

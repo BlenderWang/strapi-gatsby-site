@@ -162,6 +162,10 @@ a {
   .logo-wrapper {
     width: 20%;
     height: auto;
+
+    &:hover {
+      filter: sepia(60%);
+    }
   }
 
   h1 {

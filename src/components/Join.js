@@ -23,7 +23,9 @@ export default function Join() {
           <Spring delay={200} to={{ opacity: isVisible ? 1 : 0 }}>
             {({ opacity }) => (
               <div style={{ opacity }}>
-                <Paragraph paragraph={"Would you like to join out team?"} />
+                <Paragraph
+                  paragraph={"Would you like to share this adventure?"}
+                />
               </div>
             )}
           </Spring>
