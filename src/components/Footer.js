@@ -9,7 +9,7 @@ export default function Footer() {
         marginTop: `12.8rem`,
       }}
     >
-      © {new Date().getFullYear()}, Flax Innovations | Built with
+      © {new Date().getFullYear()}, Wangimation | Built with
       {` `}
       <a
         href="https://www.gatsbyjs.org"
