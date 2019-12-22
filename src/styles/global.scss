@@ -159,6 +159,11 @@ a {
   background-color: transparent;
   @include transition-ease;
 
+  .logo-wrapper {
+    width: 20%;
+    height: auto;
+  }
+
   h1 {
     line-height: 0.9;
     font-size: 1em;

@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Menu from "./Menu"
-import Title from "./Title"
 import { Link } from "gatsby"
 
 export default class NavHeader extends Component {
@@ -44,7 +43,13 @@ export default class NavHeader extends Component {
     return (
       <div className={navTrans}>
         <Link to="/">
-          <Title title={"W"} subtitle={"In Action"} />
+          <div className="logo-wrapper">
+            <img
+              src="https://res.cloudinary.com/shirlzzz9/image/upload/v1577032533/logo.png"
+              alt="logo"
+              style={{ width: `75% `, height: `auto` }}
+            />
+          </div>
         </Link>
         <Menu />
       </div>
